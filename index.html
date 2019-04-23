@@ -1,8 +1,19 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title></title>
+	<script>
+    function redirect(){
+    	var randNum = Math.floor(Math.random() * 3);
+    	var randURLs = [
+	        "http://3.90.180.127:3000",
+	        "https://wecoop.herokuapp.com",
+	        "http://e980bb93.ngrok.io"
+    	];
+    	window.open(randURLs[randNum], '_self');
+    }
+	</script>
 </head>
-<body onload=window.location="https://wecoop.herokuapp.com/home">
-
+<body onload="redirect()">
 </body>
 </html>
